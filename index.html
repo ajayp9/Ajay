@@ -6,6 +6,9 @@
   <title>Ajay-Pal</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="./tailwind.config.js"></script>
+  <!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
@@ -30,7 +33,9 @@
       <li><a href="#top">Home</a></li>
       <li><a href="#about">About me</a></li>
       <li><a href="#work">Projects</a></li>
+      <li><a href="#certificate">Certificate</a></li>
       <li><a href="#contact">Contact me</a></li>
+      
     </ul>
     
     <div class="flex items-center gap-4">
@@ -62,6 +67,7 @@
       <li><a href="#top" onclick="closeMenu()">Home</a></li>
       <li><a href="#about" onclick="closeMenu()">About me</a></li>
       <li><a href="#work" onclick="closeMenu()">Projects</a></li>
+      <li><a href="#certificate" onclick="closeMenu()">Certificate</a></li>
       <li><a href="#contact" onclick="closeMenu()">Contact me</a></li>
     </ul>
 
@@ -70,20 +76,21 @@
   <!-- header section -->
 
    <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
-    <img src="./images/AJAYPAL.jpg" alt="" class="rounded-full w-32 h-32">
-    <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo">
+     <img src="./images/profile-img.jpg" alt="Profile image" data-aos="zoom-in"
+     class="rounded-full w-32 h-32 object-cover border-4 border-white shadow-lg">
+    <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo" data-aos="fade-right">
       Hi! I'm Ajay Pal <img src="./images/hand-icon.png" alt="" class="w-6"> 
     </h3>
-    <h1 class="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">Full Stack developer</h1>
-    <p class="max-w-2xl mx-auto font-Ovo">I am a passionate Software Engineer and Full stack Developer . I love coding and developing new things . I build web apps and help people to reach out their goals through my apps. Also I push myself by learning new things and taking up challenges.</p>
+    <h1 class="text-3xl sm:text-6xl lg:text-[66px] font-Ovo" data-aos="fade-left" >Full Stack developer</h1>
+    <p class="max-w-2xl mx-auto font-Ovo" >I am a passionate Software Engineer and Full stack Developer . I love coding and developing new things . I build web apps and help people to reach out their goals through my apps. Also I push myself by learning new things and taking up challenges.</p>
    
    <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
     <a href="#contact"
-    class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2 dark:border-transparent">contact me <img src="./images/right-arrow-white.png" alt="" class="w-4"></a>
+    class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2 dark:border-transparent" data-aos="fade-right">contact me <img src="./images/right-arrow-white.png" alt="" class="w-4"></a>
     
     <!-- yaha par apne resume ka link dalana hai -->
-    <a href="https://drive.google.com/file/d/1IvbcXLey6yYwyzJ6I0srb8-aiO2hg6wr/view?usp=sharing" download
-    class="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black">my resume 
+    <a href="https://drive.google.com/file/d/19Hq6q9A2vZ5y8cyoiVpADlgHlgKKoJ_K/view?usp=sharing"
+    class="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black" data-aos="fade-left">my resume 
 <!--       <img src="./images/download-icon.png" alt="" class="w-4"> -->
     </a>
    </div>
@@ -95,7 +102,7 @@
     <h4 class="text-center mb-2 text-lg font-Ovo">introduction</h4>
     <h2 class="text-center text-5xl font-Ovo">About me</h2>
 
-    <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+    <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20" >
       <div class="max-w-max mx-auto relative">
         <!-- yaha se image ki size control karna  -->
         <img src="./images/user-image.jpeg" alt="" class="w-64 sm:w-80 rounded-3xl max-w-none cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black">
@@ -108,12 +115,12 @@
         </div>
       </div>
       <div class="flex-1">
-        <p class="mb-10 max-w-2xl font-Ovo">
+        <p class="mb-10 max-w-2xl font-Ovo" data-aos="fade-up-right">
           I am a passionate Software Engineer and Full stack Developer . I love coding and developing new things . I build web apps and help people to reach out their goals through my apps. Also I push myself by learning new things and taking up challenges.
         </p>
          
         <ul class="grid grid-cols-1 sm:grid-cols-auto gap-6 max-w-2xl">
-          <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black
+          <li data-aos="flip-left" class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black
           dark:hover:shadow-white  dark:border-white
           dark:hover:bg-darkHover/50
           ">
@@ -124,7 +131,7 @@
             <p class="text-gray-600 text-sm dark:text-white/80">C++, Java, Python, HTML, CSS, JavaScript, ReactJs, NextJs, NodeJs</p>
           </li>
 
-          <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black
+          <li data-aos="zoom-in" class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black
           dark:hover:shadow-white  dark:border-white
           dark:hover:bg-darkHover/50
           ">
@@ -134,7 +141,7 @@
             <p class="text-gray-600 text-sm dark:text-white/80">B.Tech in Computer Science </p>
           </li>
 
-          <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black
+          <li data-aos="flip-right" class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black
           dark:hover:shadow-white  dark:border-white
           dark:hover:bg-darkHover/50
           ">
@@ -179,177 +186,100 @@
     <h2 class="text-center text-5xl font-Ovo">My Project</h2>
     <!-- <br> -->
     <p class="text-center mx-w-2xl mx-auto mt-5 mb-12 font-Ovo">Welcome to my web development portfolio! Explore a collection of projects showcasing my expertise in front-end development.</p>
-    <!-- image of project 1 -->
-<!--     <div class="grid grid-cols-auto my-10 gap-5">
-      <div class="aspect-square bg-[url('./images/work-1.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
-       
+
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-10 gap-5">
+      <!-- Project 1 -->
+      <div data-aos="zoom-out-up" class="aspect-square bg-[url('./images/work-1.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
         <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-          
           <div class="dark text-black">
-            <h2 class="font-semibold">Frontend project</h2>
+            <h2 class="font-semibold">Frontend Project</h2>
             <p class="text-sm text-gray-700">Food Delivery</p>
           </div>
           <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-            <a href="https://food-app-eta-olive.vercel.app/">
-              <img src="./images/send-icon.png" alt="" class="w-5">
+            <a href="https://food-app-eta-olive.vercel.app/" target="_blank">
+              <img src="./images/send-icon.png" alt="Visit Food Delivery project" class="w-5">
             </a>
-            
           </div>
         </div>
-      </div> -->
-
-      <!-- project 2 -->
-<!--       <div class="aspect-square bg-[url('./images/work-2.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
-       
+      </div>
+    
+      <!-- Project 2 -->
+      <div data-aos="zoom-out-up" class="aspect-square bg-[url('./images/work-2.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
         <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-          
           <div class="dark text-black">
-            <h2 class="font-semibold">Frontend project</h2>
+            <h2 class="font-semibold">Frontend Project</h2>
             <p class="text-sm text-gray-700">Crypto Tracking</p>
           </div>
           <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-            <a href="https://crypto-tracking-ajay.vercel.app/">
-
-              <img src="./images/send-icon.png" alt="" class="w-5">
+            <a href="https://crypto-tracking-ajay.vercel.app/" target="_blank">
+              <img src="./images/send-icon.png" alt="Visit Crypto Tracking project" class="w-5">
             </a>
-            
           </div>
         </div>
-      </div> -->
-
-
-
-<!--       <div class="grid grid-cols-auto my-10 gap-5">
-      <div class="aspect-square bg-[url('./images/Ecommerce.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
-       
+      </div>
+    
+      <!-- Project 3 -->
+      <div data-aos="zoom-out-up" class="aspect-square bg-[url('./images/Ecommerce.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
         <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-          
           <div class="dark text-black">
-            <h2 class="font-semibold">Mern Stack</h2>
+            <h2 class="font-semibold">MERN Stack</h2>
             <p class="text-sm text-gray-700">Ecommerce</p>
           </div>
           <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-            <a href="https://ecommerce-frontend-nine-cyan.vercel.app/">
-              <img src="./images/send-icon.png" alt="" class="w-5">
+            <a href="https://ecommerce-frontend-nine-cyan.vercel.app/" target="_blank">
+              <img src="./images/send-icon.png" alt="Visit Ecommerce project" class="w-5">
             </a>
-            
           </div>
         </div>
-      </div> -->
-
-
-     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-10 gap-5">
-  <!-- Project 1 -->
-  <div class="aspect-square bg-[url('./images/work-1.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
-    <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-      <div class="dark text-black">
-        <h2 class="font-semibold">Frontend Project</h2>
-        <p class="text-sm text-gray-700">Food Delivery</p>
       </div>
-      <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-        <a href="https://food-app-eta-olive.vercel.app/" target="_blank">
-          <img src="./images/send-icon.png" alt="Visit Food Delivery project" class="w-5">
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Project 2 -->
-  <div class="aspect-square bg-[url('./images/work-2.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
-    <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-      <div class="dark text-black">
-        <h2 class="font-semibold">Frontend Project</h2>
-        <p class="text-sm text-gray-700">Crypto Tracking</p>
-      </div>
-      <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-        <a href="https://crypto-tracking-ajay.vercel.app/" target="_blank">
-          <img src="./images/send-icon.png" alt="Visit Crypto Tracking project" class="w-5">
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Project 3 -->
-  <div class="aspect-square bg-[url('./images/Ecommerce.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
-    <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-      <div class="dark text-black">
-        <h2 class="font-semibold">MERN Stack</h2>
-        <p class="text-sm text-gray-700">Ecommerce</p>
-      </div>
-      <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-        <a href="https://ecommerce-frontend-nine-cyan.vercel.app/" target="_blank">
-          <img src="./images/send-icon.png" alt="Visit Ecommerce project" class="w-5">
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Project 4 -->
-  <div class="aspect-square bg-[url('./images/work-3.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
-    <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-      <div class="dark text-black">
-        <h2 class="font-semibold">App</h2>
-        <p class="text-sm text-gray-700">Weather App</p>
-      </div>
-      <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-        <a href="https://weather-app-orcin-chi-44.vercel.app/" target="_blank">
-          <img src="./images/send-icon.png" alt="Visit Weather App project" class="w-5">
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Project 5 -->
-  <div class="aspect-square bg-[url('./images/work-4.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
-    <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-      <div class="dark text-black">
-        <h2 class="font-semibold">Notes</h2>
-        <p class="text-sm text-gray-700">Note Pad</p>
-      </div>
-      <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-        <a href="https://note-pad-xi.vercel.app/" target="_blank">
-          <img src="./images/send-icon.png" alt="Visit Note Pad project" class="w-5">
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-     
-
-
-
-
-
-
-
-
-
-
-      
-
-      <!-- project 3 -->
-<!--       <div class="aspect-square bg-[url('./images/work-3.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
-       
+    
+      <!-- Project 4 -->
+      <div data-aos="zoom-out-up" class="aspect-square bg-[url('./images/work-3.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
         <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-          
           <div class="dark text-black">
             <h2 class="font-semibold">App</h2>
             <p class="text-sm text-gray-700">Weather App</p>
           </div>
           <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-            <a href="https://weather-app-orcin-chi-44.vercel.app/">
-              <img src="./images/send-icon.png"
-              alt="" class="w-5"> 
+            <a href="https://weather-app-orcin-chi-44.vercel.app/" target="_blank">
+              <img src="./images/send-icon.png" alt="Visit Weather App project" class="w-5">
             </a>
-            
           </div>
         </div>
-      </div> -->
+      </div>
+    
+      <!-- Project 5 -->
+      <div data-aos="zoom-out-up" class="aspect-square bg-[url('./images/work-4.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+        <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+          <div class="dark text-black">
+            <h2 class="font-semibold">Notes</h2>
+            <p class="text-sm text-gray-700">Note Pad</p>
+          </div>
+          <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+            <a href="https://note-pad-xi.vercel.app/" target="_blank">
+              <img src="./images/send-icon.png" alt="Visit Note Pad project" class="w-5">
+            </a>
+          </div>
+        </div>
+      </div>
 
-      <!-- project 4 -->
-      
+      <!--Project 6-->
+      <div data-aos="zoom-out-up" class="aspect-square bg-[url('./images/proj6.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+        <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+          <div class="dark text-black">
+            <h2 class="font-semibold">Guess Number</h2>
+            <p class="text-sm text-gray-700">ReactJs</p>
+          </div>
+          <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+            <a href="https://guess-number-sand-three.vercel.app/" target="_blank">
+              <img src="./images/send-icon.png" alt="Visit Note Pad project" class="w-5">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+     
     </div>
      
     <a href="#" class="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500
@@ -360,6 +290,60 @@
     </a>
 
    </div> 
+
+
+   <!-- Certificate -->
+   <div id="certificate" class="w-full px-[12%] py-10 scroll-mt-20">
+  <h4 class="text-center mb-2 text-lg font-Ovo">My Achievements</h4>
+  <h2 class="text-center text-5xl font-Ovo mb-12">Certificates</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    
+    <!-- Certificate Card 1 -->
+    <div data-aos="fade-up" class="border rounded-xl p-5 shadow hover:shadow-xl transition">
+      <img src="./images/DSAcoding.png" alt="Certificate 1" class="rounded-lg mb-4 w-full h-48 object-cover">
+      <h3 class="font-semibold text-lg mb-1">Data Structures in C++</h3>
+      <p class="text-sm text-gray-600 mb-2">Issued by Coding Ninjas</p>
+      <a href="https://drive.google.com/file/d/1vtkhbrArYwDP_Y95k9LaDWjjLP8wGVNy/view?usp=sharing" target="_blank" class="text-indigo-600 hover:underline text-sm">View Certificate</a>
+    </div>
+
+    <!-- Certificate Card 2 -->
+    <div data-aos="fade-up" class="border rounded-xl p-5 shadow hover:shadow-xl transition">
+      <img src="./images/WebDe.png" alt="Certificate 2" class="rounded-lg mb-4 w-full h-48 object-cover">
+      <h3 class="font-semibold text-lg mb-1">Full-Stack Web Development</h3>
+      <p class="text-sm text-gray-600 mb-2">Issued by Udemy</p>
+      <a href="https://drive.google.com/file/d/11qeSruzpanIIeiOW2NeCpDOheA2MByVM/view?usp=sharing" target="_blank" class="text-indigo-600 hover:underline text-sm">View Certificate</a>
+    </div>
+
+    <!-- Certificate Card 3 -->
+     <div data-aos="fade-up" class="border rounded-xl p-5 shadow hover:shadow-xl transition">
+      <img src="./images/tle.png" alt="Certificate 2" class="rounded-lg mb-4 w-full h-48 object-cover">
+      <h3 class="font-semibold text-lg mb-1">45 Day Codeforces</h3>
+      <p class="text-sm text-gray-600 mb-2">Issued by TLE Eliminators</p>
+      <a href="https://drive.google.com/file/d/1--XxQMshIzLe6isvISfbQtHrCb7CYmei/view?usp=sharing" target="_blank" class="text-indigo-600 hover:underline text-sm">View Certificate</a>
+    </div>
+
+    <!-- Certificate Card 4 -->
+     <div data-aos="fade-up" class="border rounded-xl p-5 shadow hover:shadow-xl transition">
+      <img src="./images/cn.png" alt="Certificate 2" class="rounded-lg mb-4 w-full h-48 object-cover">
+      <h3 class="font-semibold text-lg mb-1">Computer Network</h3>
+      <p class="text-sm text-gray-600 mb-2">Issued by TUF</p>
+      <a href="https://drive.google.com/file/d/1MjJl_8axC2aWxOxe48yfY7LACQTrSdup/view?usp=sharing" target="_blank" class="text-indigo-600 hover:underline text-sm">View Certificate</a>
+    </div>
+
+    <!-- Certificate Card 5 -->
+     <div data-aos="fade-up" class="border rounded-xl p-5 shadow hover:shadow-xl transition">
+      <img src="./images/blue.png" alt="Certificate 2" class="rounded-lg mb-4 w-full h-48 object-cover">
+      <h3 class="font-semibold text-lg mb-1">SDE Intern</h3>
+      <p class="text-sm text-gray-600 mb-2">Issued by BlueStock Fintech</p>
+      <a href="https://drive.google.com/file/d/1580mifshgQHvgw-MUHSktXhVwkjknd6g/view?usp=sharing" target="_blank" class="text-indigo-600 hover:underline text-sm">View Certificate</a>
+    </div>
+
+    <!-- Add more cards as needed -->
+
+  </div>
+</div>
+
 
    <!-- contact -->
     <div id="contact" class="w-full px-[12%] py-10 scroll-mt-20 bg-[url('./images/footer-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center
@@ -402,7 +386,7 @@
         </div>
       </div>
       <div class="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6">
-        <p>&#169; 2024 Ajay Pal. All rights reserved.</p>
+        <p>&#169; 2025 Ajay Pal. All rights reserved.</p>
         <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
           
           <li><a href="https://github.com/ajayp9">GitHub</a></li>
@@ -412,5 +396,14 @@
       </div>
      </div>
   <script src="./script.js"></script>
+  <!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,  // animation duration (in ms)
+    once: true       // whether animation should happen only once
+  });
+</script>
+
 </body>
 </html>
