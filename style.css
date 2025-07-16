@@ -1,0 +1,37 @@
+@keyframes floatSide {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
+}
+.animate-float-side {
+  animation: floatSide 3s ease-in-out infinite;
+}
+
+
+.cursor-trail {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: rgb(255, 0, 0);
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: 0 0 10px red, 0 0 20px red;
+  animation: fadeTrail 0.8s ease-out forwards;
+}
+
+@keyframes fadeTrail {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+
+
+@keyframes zoomInOut {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
